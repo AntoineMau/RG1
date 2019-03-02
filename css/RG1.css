@@ -1,0 +1,171 @@
+body {
+	font-size: 0.9em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+	border-spacing: 0;
+	text-align: center;
+	border: 1px solid black;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+thead {
+	font-weight: bold;
+}
+
+td {
+	border-bottom: 1px solid black;
+}
+
+#Resultat {
+	text-indent: 10px;
+}
+
+tbody tr:last-child td {
+	border: 0;
+}
+
+p {
+	margin-right: 2vw;
+	text-align: justify;
+}
+
+#table_team, #table_team tbody tr td {
+	border: 0px;
+}
+
+.Photo {
+	height: 15vh;
+	width: auto;
+}
+
+.Image {
+	float: right;
+	margin-top: 2vmin;
+	width: 20vmin;
+	height: auto;
+}
+
+.Logo1 {
+	margin-left: 20vmin;
+	display: flex;
+	width: 5vmin;
+	height: auto;
+}
+
+.Logo2 {
+	margin-left: 10vmin;
+	display: flex;
+	width: 5vmin;
+	height: auto;
+}
+
+.logo_right {
+	float: left;
+	height: 4vmin;
+	width: auto;
+}
+
+.logo_left {
+	float: right;
+	height: 4vmin;
+	width: auto;
+}
+
+#banniere {
+	width: 98vw;
+	height: auto;
+	max-height: 71px;
+	border-radius: 1vmin 1vmin 0;
+	background: linear-gradient(to bottom, rgb(86, 160, 243) 0%, rgb(26, 100, 183) 100%);
+}
+
+#menu, #menu ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
+
+#menu li {
+	display: left;
+	position: relative;
+	width: 20vw;
+	min-width: 250px;
+	border-radius: 1vmin 0 0 0;
+}
+#menu ul li {
+	display: inherit;
+	border-radius: 0;
+}
+
+#menu ul li:hover {
+	border-radius: 0;
+}
+
+#menu ul li:last-child {
+	border-radius: 0 0 1vmin 1vmin;
+}
+
+#menu ul {
+	position: absolute;
+	z-index: 1000;
+	max-height: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	transition: .5s all .2s;
+}
+
+#menu li:hover ul {
+	max-height: 15em;
+}
+
+#menu a {
+	text-decoration: none;
+	display: block;
+	padding: 2vmin 4vmin;
+	color: white;
+	font-family: arial;
+}
+
+#menu ul a {
+	padding: 2vmin 0;
+}
+
+#menu li:hover li a {
+	color: white;
+	text-transform: inherit;
+}
+
+#menu li:hover a, #menu li li:hover a {
+	color: black;
+}
+
+/*
+** Couleur du background des menus
+*/
+
+#menu li:first-child {
+	background-image: linear-gradient(to bottom, rgb(86, 160, 243) 0%, rgb(26, 100, 183) 100%);
+}
+
+/*
+** Couleur du background des sous menus
+*/
+
+#menu li:first-child li {
+	background: rgb(26, 100, 183);
+}
+
+/*
+** Couleur du background du menu actif et des sous menus actif
+*/
+
+#menu li:first-child:hover, #menu li:first-child li:hover {
+	background: rgb(252, 191, 22);
+}
